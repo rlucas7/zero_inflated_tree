@@ -6,8 +6,13 @@ To understand the properties of the tree method we devised two simple simulation
 
 \subsection{A Simple Simulation}
 
-In this section we mimic the simulation done in Lee \cite{}. 
+In this section we mimic the simulation done in Lee \cite{lee2006decision}.
+We briefly describe the simulation study here but further details can be found in their paper. 
 
+We simulate a zero-inflated Poisson distribution with two different values for the rate parameter, $lambda$ and $\lambda+\epsilon$ for various values of $\epsilon$. Whether the rate is the smaller of the two values is determined by whether $x_1 \in \{0,1\}$. The smaller rate is smaller when $x_1=0$. An additional noise variable is simulated with $x_2 \in \{0,1\}$. We simulate $m=300$ data points from this distribution. We then fit trees to this data using the Bayesian zero-inflated Poisson model discussed in Section \ref{sec:model_details}. 
+
+Table \ref{tab:simul_results} gives the details from the result of the simulation. 
+ 
 \begin{enumerate}
 \item Simulation from the '06 ZIP tree paper. 
 \item Simulation using a continuous variate too? 
