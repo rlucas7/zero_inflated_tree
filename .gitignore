@@ -1,0 +1,4 @@
+# this is a gitignore file that specifies files to ignore for git's tracking
+*.aux # ignore .aux files 
+*.log $ inglore .log files 
+.gittignore 
